@@ -3253,3 +3253,118 @@ body.intro-active {
     }
 
 }
+
+/* =========================================================
+   FINAL MOBILE HERO FIX
+========================================================= */
+
+@media (max-width: 650px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 100svh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* EYEBROW */
+
+    .hero-eyebrow {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+
+    /* MAIN HEADING */
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: 0;
+
+        font-size: clamp(48px, 13vw, 66px);
+        line-height: 0.98;
+        letter-spacing: -3px;
+
+        overflow-wrap: normal;
+    }
+
+
+    /* DESCRIPTION */
+
+    .hero-description {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: 0;
+
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+
+    /* BUTTONS */
+
+    .hero-actions {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 14px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        max-width: 100%;
+
+        justify-content: center;
+
+        box-sizing: border-box;
+    }
+
+
+    /* GOOGLE RATING */
+
+    .hero-trust {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: 0;
+
+        display: flex;
+        align-items: center;
+
+        gap: 14px;
+    }
+
+    .trust-avatars {
+        flex-shrink: 0;
+    }
+
+}
