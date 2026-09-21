@@ -2756,6 +2756,19 @@ body.intro-active {
     align-items: flex-start;
 }
 
+    /* SERVICE CARDS */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .service-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+
 
 }
 
