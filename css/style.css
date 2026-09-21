@@ -3460,3 +3460,18 @@ body.intro-active {
     }
 
 }
+
+/* FINAL SERVICE GRID MOBILE OVERRIDE */
+@media (max-width: 950px) {
+    .services-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+    }
+
+    .service-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+}
