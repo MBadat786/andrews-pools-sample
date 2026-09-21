@@ -3374,319 +3374,76 @@ body.intro-active {
    KEEP THIS AT THE VERY BOTTOM
 ========================================================= */
 
-@media (max-width: 650px) {
-
-    html,
-    body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden !important;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    img {
-        max-width: 100%;
-    }
-
-
-    /* =========================
-       CONTAINERS
-    ========================= */
-
-    .container {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-
-
-    /* =========================
-       HERO
-    ========================= */
-
-    .hero {
-        width: 100%;
-        min-height: 100svh;
-        overflow: hidden;
-    }
-
-    .hero-content {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-
-        transform: none !important;
-    }
-
-    .hero-eyebrow,
-    .hero-description,
-    .hero-actions,
-    .hero-trust {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        margin-left: 0 !important;
-
-        transform: none !important;
-    }
-
-    .hero h1 {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        margin-left: 0 !important;
-
-        transform: none !important;
-
-        font-size: clamp(48px, 13vw, 64px);
-        line-height: 0.98;
-        letter-spacing: -3px;
-    }
-
-    .hero-description {
-        font-size: 17px;
-        line-height: 1.65;
-    }
-
-    .hero-actions {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-    }
-
-    .hero-actions .btn {
-        width: 100%;
-        justify-content: center;
-    }
-
-
-    /* =========================
-       SECTION HEADINGS
-    ========================= */
-
-    .section-heading,
-    .projects-header,
-    .reviews-top,
-    .transformation-heading {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        display: block !important;
-
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-
-        transform: none !important;
-    }
-
-    .section-heading h2,
-    .projects-header h2,
-    .reviews-top h2,
-    .transformation-heading h2 {
-        width: 100%;
-        max-width: 100%;
-
-        font-size: clamp(40px, 11vw, 58px);
-        line-height: 1;
-
-        margin-bottom: 20px;
-    }
-
-    .section-heading p,
-    .projects-header p,
-    .reviews-top p,
-    .transformation-heading p {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        margin-left: 0 !important;
-
-        font-size: 17px;
-        line-height: 1.65;
-    }
-
-
-    /* =========================
-       SERVICES
-    ========================= */
-
-    .services-grid {
-        display: grid !important;
-
-        grid-template-columns: 1fr !important;
-
-        width: 100% !important;
-        max-width: 100% !important;
-
-        gap: 18px;
-
-        overflow: visible;
-
-        transform: none !important;
-    }
-
-    .service-card {
-        width: 100% !important;
-        min-width: 0 !important;
-        max-width: 100% !important;
-
-        margin: 0 !important;
-
-        transform: none;
-    }
-
-
-    /* =========================
-       PROJECT GALLERY
-    ========================= */
-
-    .projects-grid {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-
-        width: 100% !important;
-
-        gap: 16px;
-    }
-
-    .project-card,
-    .project-large,
-    .project-wide {
-        width: 100% !important;
-
-        grid-column: auto !important;
-        grid-row: auto !important;
-    }
-
-
-    /* =========================
-       BEFORE / AFTER
-    ========================= */
-
-    .comparison-slider {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-
-
-    /* =========================
-       LEGACY / ABOUT
-    ========================= */
-
-    .legacy-grid {
-        grid-template-columns: 1fr !important;
-
-        width: 100% !important;
-    }
-
-
-    /* =========================
-       REVIEWS
-    ========================= */
-
-    .reviews-grid {
-        grid-template-columns: 1fr !important;
-
-        width: 100% !important;
-
-        gap: 18px;
-    }
-
-    .review-card {
-        width: 100% !important;
-        min-width: 0 !important;
-    }
-
-
-    /* =========================
-       FINAL CTA
-    ========================= */
-
-    .final-cta-content {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-}
-
 /* =========================================================
-   MOBILE - FORCE TWO COLUMN SECTIONS TO STACK
+   SERVICES + TRANSFORMATION MOBILE FIX
 ========================================================= */
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
 
-    /* SERVICES HEADING */
+    /* SERVICES INTRO */
 
-    .section-heading {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
+    .section-heading-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
-        gap: 22px !important;
+        gap: 22px;
 
-        width: 100% !important;
+        width: 100%;
     }
 
-    .section-heading > * {
-        width: 100% !important;
-        max-width: 100% !important;
+    .section-heading-row h2,
+    .section-heading-row > p {
+        width: 100%;
+        max-width: 100%;
 
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin: 0;
+    }
+
+
+    /* TRANSFORMATION HEADING */
+
+    .transformation-title-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 22px;
+
+        width: 100%;
+    }
+
+    .transformation-copy {
+        width: 100%;
+        max-width: 100%;
     }
 
 
     /* TRANSFORMATION PROJECT INFO */
 
     .transformation-info {
-        display: flex !important;
-        flex-direction: column !important;
+        display: grid;
 
-        width: 100% !important;
-        max-width: 100% !important;
+        grid-template-columns: 1fr;
 
-        gap: 24px !important;
+        width: 100%;
 
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        gap: 22px;
+
+        align-items: start;
     }
 
-    .transformation-info > * {
-        width: 100% !important;
-        max-width: 100% !important;
+    .transformation-info > div,
+    .transformation-info > p,
+    .transformation-info > a {
+        width: 100%;
+        max-width: 100%;
 
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-
-        transform: none !important;
+        margin: 0;
     }
 
-
-    /* STOP CHILD TEXT FROM OVERFLOWING */
-
-    .section-heading p,
-    .transformation-info p {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        white-space: normal !important;
-        overflow-wrap: break-word;
+    .transformation-info > a {
+        white-space: normal;
     }
 
 }
